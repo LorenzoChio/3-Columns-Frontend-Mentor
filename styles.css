@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    margin: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 15px;
+}
+
+.container {
+    padding: 50px;
+}
+
+.info-button {
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+}
+
+.info-button:hover {
+    background-color: hsla(0, 0%, 100%, 0);
+    border: 3px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
