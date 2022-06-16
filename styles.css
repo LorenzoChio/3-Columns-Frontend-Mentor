@@ -16,7 +16,7 @@ main {
 }
 
 .grid {
-    display: grid;
+    display: flex;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -41,7 +41,7 @@ main {
 
 .sedan {
     background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 00px 0px 10px;
 }
 
 .sedan button {
@@ -58,7 +58,7 @@ main {
 
 .luxury {
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .luxury button {
@@ -76,9 +76,11 @@ p {
     font-weight: 400;
 }
 
-@media (min-width: 376px) {
+@media only screen and (max-width: 650px) {
     .grid {
-        grid-template-columns: 310px 310px 310px;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .info-button {
@@ -86,10 +88,10 @@ p {
     }
 
     .sedan {
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 10px 10px 0px 00px;
     }
 
     .luxury {
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 0px 10px 10px;
     }
 }
