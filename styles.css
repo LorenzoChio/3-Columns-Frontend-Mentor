@@ -5,7 +5,7 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.5;
     background-color: hsl(0, 0%, 95%);
-    min-height: 100vh;
+    height: 100vh;
 }
 
 main {
@@ -13,6 +13,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 100vh;
 }
 
 .grid {
@@ -76,7 +77,7 @@ p {
     font-weight: 400;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 481px) {
     .grid {
         grid-template-columns: 310px 310px 310px;
     }
