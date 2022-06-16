@@ -12,8 +12,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container {
@@ -39,12 +38,24 @@ main {
     background-color: hsl(31, 77%, 52%);
 }
 
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
 .suv {
     background-color: hsl(184, 100%, 22%);
 }
 
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
 .luxury {
     background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
 }
 
 h1{
@@ -56,4 +67,14 @@ h1{
 p {
     font-size: 0.9375rem;
     font-weight: 400;
+}
+
+@media (min-width: 376px) {
+    .grid {
+        grid-template-columns: 310px 310px 310px;
+    }
+
+    .info-button {
+        margin-top: 60px;
+    }
 }
